@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "my-postgres18",
+            "group": "week1",
+            "database": "hyfuser",
+            "username": "hyfuser",
+            "password": "hyfpassword"
+        }
+    ]
+}
