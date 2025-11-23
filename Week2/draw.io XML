@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net">
+<diagram id="recipe-erd" name="Recipe DB">
+<mxGraphModel dx="1080" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+
+<mxCell id="recipes" value="recipes\n- id (PK)\n- name\n- cuisine_id (FK)\n- is_vegetarian\n- is_vegan\n- needs_baking" style="shape=rectangle;whiteSpace=wrap;rounded=1;" vertex="1">
+<mxGeometry x="40" y="40" width="200" height="140" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="ingredients" value="ingredients\n- id (PK)\n- name" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="360" y="40" width="160" height="100" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="recipe_ingredients" value="recipe_ingredients\n- recipe_id (FK)\n- ingredient_id (FK)\n- quantity" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="220" y="200" width="200" height="120" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="steps" value="steps\n- id (PK)\n- recipe_id (FK)\n- step_number\n- instruction" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="40" y="260" width="200" height="140" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="cuisines" value="cuisines\n- id (PK)\n- name" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="40" y="420" width="200" height="100" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="tags" value="tags\n- id (PK)\n- name" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="460" y="260" width="140" height="100" as="geometry"/>
+</mxCell>
+
+
+<mxCell id="recipe_tags" value="recipe_tags\n- recipe_id (FK)\n- tag_id (FK)" style="shape=rectangle;rounded=1;" vertex="1">
+<mxGeometry x="460" y="420" width="160" height="100" as="geometry"/>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>
