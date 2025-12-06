@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "recipe123",
+    "name": "Vegan Japanese Potato Curry",
+    "category": "curry",
+    "cuisine": "Japanese",
+    "requires_baking": false,
+    "diets": ["vegan", "vegetarian"],
+    "ingredients": [
+      { "name": "potato", "quantity": 3, "unit": "pieces" },
+      { "name": "carrot", "quantity": 2, "unit": "pieces" }
+    ],
+    "instructions": [
+      { "step": 1, "description": "Chop the vegetables" },
+      { "step": 2, "description": "Cook with spices" }
+    ]
+  }
+]
